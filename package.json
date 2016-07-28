@@ -1,0 +1,24 @@
+{
+  "name": "bmbs",
+  "version": "0.0.1",
+  "description": "Mercedes China Performance Sample",
+  "main": "mmc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor bmbs.js"
+  },
+  "keywords": [
+    "Daimler",
+    "PoC"
+  ],
+  "author": "okoeth",
+  "license": "Commercial",
+  "dependencies": {
+    "logfmt": "^0.21.0",
+    "express": "^3.4.8",
+    "node-uuid": "^1.4.7"
+  },
+  "engines": {
+    "node": "4.1.x"
+  }  
+}

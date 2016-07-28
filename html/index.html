@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+  <title>Mmc PoC CLient App</title>
+  <meta name="description" content="">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+<!--
+  <style>
+    @import 'ui/css/evothings-app.css';
+  </style>
+-->
+  <script>
+  // Redirect console.log to Evothings Workbench.
+  if (window.hyper && window.hyper.log) { console.log = hyper.log }
+  </script>
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <!--
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/Mercedes_Me.css">
+  <link rel="stylesheet" href="styles/bootstrap-3.3.6/bootstrap-theme.min.css"> 
+  -->
+  <link rel="stylesheet" href="styles/bootstrap-3.3.6/bootstrap.dark3.min.css">
+
+  <!-- endbuild -->
+</head>
+
+  <body ng-app="bmbsPerformanceApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!--
+    <ul class="menu">
+      <li><a href="#/dummy">dummy</a></li>
+      <li><a href="#/meal-list">meal-list</a></li>
+      <li><a href="#/meal-detail/1">meal-detail/1</a></li>
+      <li><a href="#/meal-creation">meal-creation</a></li>
+    </ul>
+    -->
+
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view=""></div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="libs/angular-1.5.0/angular.js"></script>
+    <script src="libs/angular-1.5.0/angular-route.js"></script>
+    <script src="libs/angular-1.5.0/angular-resource.js"></script>
+    <script src="libs/angular-1.5.0/angular-cookies.js"></script>
+    <script src="libs/angular-1.5.0/angular-sanitize.js"></script>
+    <script src="libs/jquery-2.2.0/jquery.js"></script>
+    <script src="libs/bootstrap-3.3.6/bootstrap.js"></script>
+    <script src="libs/ui-bootstrap-1.1.2/ui-bootstrap-tpls.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/services.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>
+    <!-- endbuild -->
+    
+  </body>
+</html>
